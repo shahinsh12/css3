@@ -1,0 +1,192 @@
+*{
+    margin:0 ;
+     padding: 0; 
+     box-sizing: border-box;
+    }
+
+
+
+.navbar1{background: #333333;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    text-align: center; 
+    
+    }
+.navbar1 ul li  { 
+    display: inline-block;
+
+    position: relative;
+    z-index: 1;
+}
+
+
+.navbar1 ul li a{
+    text-decoration: none;
+   color: white;
+    padding: 10px; 
+    display: inline-block;
+     width: 100%; 
+     margin: 0 20px;
+     font-family: cursive;
+     height: 100%;} 
+     
+    
+
+
+.navbar1 ul li::before{content: '';
+ background-color:brown;
+width: 0%;
+height: 100%;
+position:absolute;
+z-index: -1;
+top: 0;
+left: 0;
+transition: 300ms;}
+
+
+
+
+.navbar1 ul li:hover::before{
+    width: 50%;
+}
+
+
+
+
+
+.navbar1 ul li::after{
+    content: '';
+
+right: 0;
+bottom: 0;
+background-color: chartreuse;
+width: 0%;
+height: 100%;
+position: absolute;
+z-index: -1;
+transition: 300ms;
+}
+
+
+
+
+
+
+.navbar1 ul li:hover::after{
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+.navbar2{background-color: blue; text-align: center;}
+.navbar2 ul li{display: inline-block; position: relative; z-index: 2;}
+.navbar2 ul li a{text-decoration: none;
+
+
+padding: 10px 15px;
+display: inline-block; 
+width: 100%;}
+
+
+
+
+.navbar2 ul li::before{content:'';
+background-color:#dd1818;
+width: 0%;
+height: 100%;
+position:absolute;
+z-index: -1;
+transition: 300ms;
+
+}
+
+
+.navbar2 ul li::after{content:'';
+background-color:#dd1818;
+width: 0%;
+height: 100%;
+position:absolute;
+z-index: -1;
+transition: 300ms;
+right: 0;
+font-family: cursive;
+
+
+
+
+
+}
+
+
+
+
+.navbar2 ul li:hover::after {background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+width: 50%;
+
+
+}
+.navbar2 ul li:hover::before {background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+width: 50%;
+
+
+}
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .navbar1 ul li::after{
+    content: '';
+    z-index: -1;
+    width: 0%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.navbar1 ul li:hover::after{
+    width: 100%;
+} */
